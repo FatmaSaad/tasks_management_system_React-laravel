@@ -25,6 +25,8 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
+        "@babel/core": "^7.10.2",
+        "babel-loader": "^8.1.0",
         "react-router-dom": "^5.1.2"
     }
 }

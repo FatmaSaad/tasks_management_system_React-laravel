@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class TaskEdit extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: '',
-            task: ''
+            name: "",
+            task: ""
         };
-        
+
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -25,8 +25,8 @@ class TaskEdit extends Component {
                 name: this.state.name
             })
             .then(response => {
-                console.log('successfully edited the task');
-                this.props.history.push('/');
+                console.log("successfully edited the task");
+                this.props.history.push("/");
             });
     }
     getTasks() {
@@ -63,7 +63,10 @@ class TaskEdit extends Component {
                                             required
                                         />
                                     </div>
-                                    <button type="submit" className="btn btn-primary">
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary"
+                                    >
                                         Edit Task
                                     </button>
                                 </form>
